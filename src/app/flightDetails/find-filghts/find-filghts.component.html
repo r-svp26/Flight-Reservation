@@ -1,0 +1,39 @@
+    <app-header></app-header>
+    <div class="row">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-6">
+            <div class="pading">
+                <form #findFlight="ngForm">
+                <mat-card>
+                    <h2>SEARCH YOUR FLIGHT</h2>
+                        <mat-card-content>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Source</mat-label>
+                                <input matInput type="text" name="src"  [(ngModel)]="source">
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Destination</mat-label>
+                                <input matInput type="text" name="destination"  [(ngModel)]="destionation">
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Departure Date</mat-label>
+                                <input matInput [matDatepicker]="picker" placeholder="Departure Date" name="dateOfFlight" [(ngModel)]="dateOfJurney">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                            <div class="btnPadding">
+                                <button mat-raised-button color="primary" (click)="searchFlights(findFlight.value)">Search</button>
+                            </div>      
+                        </mat-card-content>
+                    </mat-card>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+       
+    

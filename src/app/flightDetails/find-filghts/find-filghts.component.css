@@ -1,0 +1,20 @@
+mat-form-field{
+    width: 100%;
+}
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.pading{
+    margin-top: 2%;
+}
+.btnPadding{
+    width: 100%;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: darkblue;
+    padding: 20px 12px;
+    border-bottom: 2px dotted;
+}
