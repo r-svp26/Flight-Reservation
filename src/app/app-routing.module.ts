@@ -18,11 +18,11 @@ const routes: Routes = [
     component:DisplayFlightsComponent
   },
   {
-    path:'passengerDetails/:id',
+    path:'passengerDetails',
     component:PassengerDetailsComponent
   },
   {
-    path:'confirmFlights?:id',
+    path:'confirmFlights',
     component:ConfirmFlightComponent
   }
 ];

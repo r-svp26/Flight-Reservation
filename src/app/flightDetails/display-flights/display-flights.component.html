@@ -1,1 +1,29 @@
 <app-header></app-header>
+<div  align="center" class="hdr">
+<h2> Select Flight</h2>
+</div>
+
+<div class="col-sm-6">
+</div>
+<div class="col-sm-3">
+    <table   border="2px" width="100%" align="center"> 
+        <tr>
+            <td>FLIGHT_NUMBER</td>
+            <td>DEPARTURE_CITY</td>
+            <td>ARRIVAL_CITY</td>
+            <td>DATE_OF_DEPARTURE</td>
+            <td>OPERATING_AIRLINES</td>
+        </tr>
+         <tr *ngFor="let flightList of listOfFlights">
+            <td>{{flightList.FLIGHT_NUMBER}}</td>
+            <td>{{flightList.DEPARTURE_CITY}}</td>
+            <td>{{flightList.ARRIVAL_CITY}}</td>
+            <td>{{flightList.DATE_OF_DEPARTURE}}</td>
+            <td>{{flightList.OPERATING_AIRLINES}}</td>
+            <td><a click()="onSelect(flightList.id)">Select</a></td>
+         </tr>
+</table>
+</div>
+
+    <div class="col-sm-3">
+    </div>

@@ -11,6 +11,7 @@ import { ConfirmFlightComponent } from './flightDetails/confirm-flight/confirm-f
 import {FormsModule} from '@angular/forms';
 import {MatInputModule,MatFormFieldModule, MatCardModule, MatDatepickerModule, MatNativeDateModule, MatButtonModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HeaderComponent } from './header/header.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatInputModule,MatFormFieldModule,
     MatCardModule,MatDatepickerModule,
     MatNativeDateModule,MatButtonModule
